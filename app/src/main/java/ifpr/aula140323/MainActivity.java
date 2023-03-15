@@ -25,9 +25,11 @@ public class MainActivity extends AppCompatActivity {
         converterreal.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String real1 = real.getText().toString();
-                double real2 = Integer.parseInt(real1);
-                double real3=real2 * 4.50;
+                double real1 = Double.parseDouble(real.getText().toString());
+
+                //String real1 = real.getText().toString();
+                //double real2 = Double.parseDouble(real1);
+                double real3=real1 * 4.50;
                 dolar.setText(String.valueOf(real3));
             }
 
